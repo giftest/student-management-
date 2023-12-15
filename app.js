@@ -1,3 +1,13 @@
+const Database = require('better-sqlite3');
+
+// Creating an SQLite database in-memory
+const db = new Database(':memory:');
+
+// Creating a table for students
+db.prepare("CREATE TABLE IF NOT EXISTS students (id INTEGER PRIMARY KEY, name TEXT, grade TEXT)").run();
+
+// Rest of your code remains the same
+
 const SQL = require('sql.js');
 
 // Creating an SQLite database in-memory
