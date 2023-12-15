@@ -1,3 +1,5 @@
+const SQL = require('sql.js');
+
 // Creating an SQLite database in-memory
 const db = new SQL.Database();
 
